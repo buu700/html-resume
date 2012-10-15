@@ -1,7 +1,7 @@
 Dependencies:
 
-* Bash
+* [Bash](http://en.wikipedia.org/wiki/Bash_\(Unix_shell\))
 
-* Wkhtmltopdf
+* [Wkhtmltopdf](http://code.google.com/p/wkhtmltopdf/)
 
-* Pdftk
+* [Pdftk](http://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/)
