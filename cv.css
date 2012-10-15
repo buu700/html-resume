@@ -1,6 +1,6 @@
 
 body > div > div {
-	font-family: LibertineC;
+	font-family: LibertineCaps;
 	font-size: 11px;
 	letter-spacing: 2px;
 	width: 40%;
@@ -86,8 +86,9 @@ div[date] + * {
 }
 
 div[detail]:after {
+	font-family: LibertineItalic;
+	font-style: normal;
 	font-weight: normal;
-	font-style: italic;
 	margin-left: 20px;
 	content: attr(detail);
 }
@@ -182,7 +183,7 @@ dash:before {
 
 
 
-b, strong, th, {
+b, strong, th {
 	font-family: LibertineBold;
 	font-weight: normal;
 }
@@ -198,6 +199,12 @@ strong {
 br + strong {
 	margin-top: 5px;
 	display: inline-block;
+}
+
+
+i {
+	font-family: LibertineItalic;
+	font-style: normal;
 }
 
 
@@ -230,30 +237,21 @@ body > span:last-child {
 
 @font-face {
 	font-family: 'Libertine';
-	src: url('cvfonts/linlibertine_r-webfont.eot');
-	src: local('Linux Libertine O'), 
-	 url('cvfonts/linlibertine_r-webfont.eot?#iefix') format('eot'),
-		 url('cvfonts/linlibertine_r-webfont.woff') format('woff'),
-		 url('cvfonts/linlibertine_r-webfont.ttf') format('truetype'),
-		 url('cvfonts/linlibertine_r-webfont.svg#webfontoHeeb6F6') format('svg');
+	src: url('cvfonts/LinLibertine_R.woff');
 }
 
 @font-face {
 	font-family: 'LibertineBold';
-	src: url('cvfonts/linlibertine_rbah-webfont.eot');
-	src: local('Linux Libertine Bold'), 
-	 url('cvfonts/linlibertine_rbah-webfont.eot?#iefix') format('eot'),
-		 url('cvfonts/linlibertine_rbah-webfont.woff') format('woff'),
-		 url('cvfonts/linlibertine_rbah-webfont.ttf') format('truetype'),
-		 url('cvfonts/linlibertine_rbah-webfont.svg#webfont4QVhSsO3') format('svg');
+	src: url('cvfonts/LinLibertine_RB.woff');
 }
 
 @font-face {
-	font-family: 'LibertineC';
-	src: url('cvfonts/linlibertine_as-webfont.eot');
-	src: local('Linux Libertine Capitals O'), 
-	 url('cvfonts/linlibertine_as-webfont.eot?#iefix') format('eot'),
-		 url('cvfonts/linlibertine_as-webfont.woff') format('woff'),
-		 url('cvfonts/linlibertine_as-webfont.ttf') format('truetype'),
-		 url('cvfonts/linlibertine_as-webfont.svg#webfontYLBLyJQH') format('svg');
+	font-family: 'LibertineItalic';
+	src: url('cvfonts/LinLibertine_RI.woff');
 }
+
+@font-face {
+	font-family: 'LibertineCaps';
+	src: url('cvfonts/LinLibertine_aS.woff');
+}
+
