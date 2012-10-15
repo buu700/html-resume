@@ -4,7 +4,7 @@ The CSS could probably use some love, since I've just been adding lines to it as
 
 ---
 
-**Usage:** cv.sh input.html output.pdf "Your Name"
+**Usage:** ./cv.sh input.html output.pdf "Your Name"
 
 As a starting point, I've included the file [cv.template.html](https://github.com/buu700/html-resume/blob/master/cv.template.html).
 
