@@ -1,5 +1,4 @@
 
-
 body > div > div {
 	font-family: LibertineC;
 	font-size: 11px;
@@ -161,12 +160,8 @@ ul {
 
 
 
-slash:before, point:before, gap:before {
+slash:before, point:before, gap:before, dash:before{
 	margin: 0px 5px;
-}
-
-gap:before {
-	content: '\0000a0';
 }
 
 slash:before {
@@ -177,11 +172,19 @@ point:before {
 	content: '\2022';
 }
 
+gap:before {
+	content: '\0000a0';
+}
+
+dash:before {
+	content: '\2013';
+}
+
 
 
 b, strong, th, {
 	font-family: LibertineBold;
-	font-weight: bold;
+	font-weight: normal;
 }
 
 tr {
@@ -238,7 +241,7 @@ body > span:last-child {
 @font-face {
 	font-family: 'LibertineBold';
 	src: url('cvfonts/linlibertine_rbah-webfont.eot');
-	src: local('Linux Libertine O'), 
+	src: local('Linux Libertine Bold'), 
 	 url('cvfonts/linlibertine_rbah-webfont.eot?#iefix') format('eot'),
 		 url('cvfonts/linlibertine_rbah-webfont.woff') format('woff'),
 		 url('cvfonts/linlibertine_rbah-webfont.ttf') format('truetype'),
