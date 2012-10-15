@@ -232,9 +232,14 @@ body > span:last-child {
 * {
 	font-family: Libertine;
 	font-size: 14px;
+	
+	-ms-word-break: break-all;
+	word-break: break-all;
+	word-break: break-word;
 	word-break: hyphenate;
-	hyphens: auto;
 	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
 }
 
 @font-face {
