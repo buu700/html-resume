@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ "$#" -ne '3' ] ; then
-	echo 'Usage: cv.sh cv.html cv.pdf "Your Name"'
+	echo './cv.sh input.html output.pdf "Your Name"'
 	exit
 fi
 
