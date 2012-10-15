@@ -1,4 +1,7 @@
-html-resume
-===========
+Dependencies:
 
-HTML resume template + PDF generator
+* Bash
+
+* Wkhtmltopdf
+
+* Pdftk
