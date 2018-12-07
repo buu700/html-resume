@@ -54,7 +54,6 @@ body > span {
 .left {
 	float: left;
 	width: 60%;
-	clear: none;
 }
 
 .right {

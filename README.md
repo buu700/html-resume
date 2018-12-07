@@ -12,9 +12,9 @@ As a starting point, I've included the file [cv.template.html](https://github.co
 
 **Dependencies:**
 
-* [Bash](http://en.wikipedia.org/wiki/Bash_\(Unix_shell\))  
-(I'll make some time in the near future to add a batch script, but if you need to use this absolutely today then you'll need Unix or Cygwin)
+* [Bash](https://en.wikipedia.org/wiki/Bash_\(Unix_shell\))
 
-* [Wkhtmltopdf](http://code.google.com/p/wkhtmltopdf/)
+* [Headless Chromium](https://www.npmjs.com/package/puppeteer)
 
-* [Pdftk](http://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/)
+* [Pdftk](https://www.pdflabs.com/tools/pdftk-the-pdf-toolkit)
+([macOS users install from here](https://stackoverflow.com/a/39814799/459881))
