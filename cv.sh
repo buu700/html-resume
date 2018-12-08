@@ -29,7 +29,7 @@ node -e "(async () => {
 			top: '0.2in'
 		},
 		path: '${2}',
-		scale: 0.8
+		scale: 0.9
 	});
 
 	await browser.close();

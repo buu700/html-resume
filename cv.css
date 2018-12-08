@@ -100,10 +100,19 @@ body > span > div {
 	margin-left: 20px;
 	margin-top: 5px;
 }
+body > span.long > div {
+	margin-bottom: 15px;
+}
 
 body > span span {
 	display: block;
 	margin-left: 30px;
+}
+body > span.long span {
+	margin-top: 15px;
+}
+body > span.long strong + span {
+	margin-top: 0;
 }
 
 body > span > span {
@@ -133,6 +142,7 @@ body > span > *:last-child {
 	width: 100%;
 	font-family: Libertine;
 	font-weight: normal;
+	transform: translateX(10px);
 }
 
 .compact > div:last-child {
@@ -181,7 +191,7 @@ dash:before {
 
 
 
-b, strong, th {
+b, b > *, strong, strong > *, th, th > * {
 	font-family: LibertineBold;
 	font-weight: normal;
 }
