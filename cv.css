@@ -47,19 +47,21 @@ body > span:before {
 body > span {
 	display: block;
 	width: 100%;
-	margin-bottom: 15px;
+	margin-bottom: 20px;
 	clear: both;
 }
 
 .left {
 	float: left;
 	width: 60%;
+	margin-bottom: 30px;
 }
 
 .right {
 	float: right;
 	width: 37.5%;
 	clear: none;
+	margin-bottom: 30px;
 }
 
 
