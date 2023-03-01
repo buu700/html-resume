@@ -154,6 +154,17 @@ body > span > *:last-child {
 
 
 
+.semicompact > span {
+	margin-bottom: 5px;
+}
+
+.left.semicompact, .right.semicompact {
+	margin-bottom: 10px;
+}
+
+
+
+
 
 ul {
 	margin: 0px;
