@@ -78,7 +78,7 @@ div[date]:before {
 
 div[date] {
 	float: left;
-	width: 96%;
+	width: calc(100% - 34px);
 }
 
 div[date] + * {
