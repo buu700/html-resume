@@ -5,6 +5,8 @@ if [ "$#" -ne '3' ] ; then
 	exit
 fi
 
+cd $(cd "$(dirname "$0")" ; pwd)
+
 rm "${2}" "${2}.pdf" .tmp.html 2> /dev/null
 cp "${1}" .tmp.html
 echo -e "InfoKey: Title\nInfoValue: ${3} CV" > "${2}.metadata"
@@ -28,8 +30,10 @@ node -e "(async () => {
 			right: '0.2in',
 			top: '0.2in'
 		},
-		path: '${2}',
-		scale: 0.9
+		pageRanges: '1',
+		path: '${2}.pdf',
+		scale: 0.9,
+		tagged: true
 	});
 
 	await browser.close();
@@ -39,8 +43,6 @@ node -e "(async () => {
 	process.exit(1);
 })"
 
-
-pdftk "${2}" cat 1 output "${2}.pdf"
 
 pdftk "${2}.pdf" update_info "${2}.metadata" output "${2}"
 
