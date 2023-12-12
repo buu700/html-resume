@@ -1,6 +1,6 @@
 {
 	"name": "html-resume",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"license": "MIT",
 	"type": "module",
 	"main": "./src/index.js",
@@ -19,8 +19,8 @@
 		"puppeteer": "~19.1"
 	},
 	"devDependencies": {
-		"@cyph/pretty-quick": "*",
 		"@cyph/prettier": "*",
+		"@cyph/pretty-quick": "*",
 		"husky": "*"
 	},
 	"description": "Resume framework",

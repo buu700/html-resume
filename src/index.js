@@ -29,10 +29,12 @@ export const generate = async ({inputPath, outputPath, pages}) => {
 	});
 	await setTimeout(1000);
 
-	const name = await page.$eval(
-		'div:first-child > div:first-child',
-		elem => elem.innerText
-	);
+	const name = await page
+		.$eval(
+			'div:first-child > div:first-child',
+			elem => elem.textContent?.trim() ?? ''
+		)
+		.catch(() => '');
 
 	if (isNaN(pages) || pages < 1) {
 		try {
@@ -70,7 +72,7 @@ export const generate = async ({inputPath, outputPath, pages}) => {
 
 	await browser.close();
 
-	pdf.setTitle(`${name?.trim() || ''} ${defaultTitle}`.trim());
+	pdf.setTitle(`${name} ${defaultTitle}`.trim());
 
 	await fs.writeFile(path.resolve(outputPath), await pdf.save());
 };
