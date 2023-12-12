@@ -34,6 +34,19 @@ export const generate = async ({inputPath, outputPath, pages}) => {
 		elem => elem.innerText
 	);
 
+	if (isNaN(pages) || pages < 1) {
+		try {
+			pages = parseInt(
+				await page.$eval(
+					'meta[name="pages"]',
+					elem => elem.attributes.content?.value
+				),
+				10
+			);
+		}
+		catch {}
+	}
+
 	const pdf = await PDFDocument.load(
 		await page.pdf({
 			displayHeaderFooter: false,
