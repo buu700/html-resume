@@ -1,5 +1,61 @@
 {
-  "dependencies": {
-    "puppeteer": "~19.1"
-  }
+	"name": "html-resume",
+	"version": "1.0.0",
+	"license": "MIT",
+	"type": "module",
+	"main": "./src/index.js",
+	"bin": {
+		"htmlResume": "./scripts/index.js"
+	},
+	"files": [
+		"/scripts",
+		"/src",
+		"/LICENSE",
+		"/README.md"
+	],
+	"dependencies": {
+		"commander": "^9",
+		"pdf-lib": "^1",
+		"puppeteer": "~19.1"
+	},
+	"devDependencies": {
+		"@cyph/pretty-quick": "*",
+		"@cyph/prettier": "*",
+		"husky": "*"
+	},
+	"description": "Resume framework",
+	"keywords": [
+		"cv",
+		"resume"
+	],
+	"author": "Ryan Lester <hacker@linux.com> (https://github.com/buu700)",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/buu700/html-resume.git"
+	},
+	"bugs": {
+		"url": "https://github.com/buu700/html-resume/issues"
+	},
+	"engines": {
+		"node": ">=18"
+	},
+	"prettier": {
+		"arrowParens": "avoid",
+		"bracketSameLine": false,
+		"bracketSpacing": false,
+		"endOfLine": "lf",
+		"htmlWhitespaceSensitivity": "css",
+		"jsxSingleQuote": false,
+		"printWidth": 80,
+		"proseWrap": "always",
+		"quoteProps": "consistent",
+		"semi": true,
+		"singleQuote": true,
+		"tabWidth": 4,
+		"trailingComma": "none",
+		"useTabs": true
+	},
+	"scripts": {
+		"prepare": "husky install"
+	}
 }

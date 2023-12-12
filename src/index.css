@@ -309,20 +309,20 @@ body > span:last-child {
 
 @font-face {
 	font-family: 'Libertine';
-	src: url('cvfonts/LinLibertine_R.woff');
+	src: url('fonts/LinLibertine_R.woff');
 }
 
 @font-face {
 	font-family: 'LibertineBold';
-	src: url('cvfonts/LinLibertine_RB.woff');
+	src: url('fonts/LinLibertine_RB.woff');
 }
 
 @font-face {
 	font-family: 'LibertineItalic';
-	src: url('cvfonts/LinLibertine_RI.woff');
+	src: url('fonts/LinLibertine_RI.woff');
 }
 
 @font-face {
 	font-family: 'LibertineCaps';
-	src: url('cvfonts/LinLibertine_aS.woff');
+	src: url('fonts/LinLibertine_aS.woff');
 }
