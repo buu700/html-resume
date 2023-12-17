@@ -78,6 +78,23 @@ body > span {
 	clear: both;
 }
 
+body > span.header {
+	margin-bottom: 5px;
+}
+
+body > span.subsection:before {
+	padding-bottom: 0;
+	border-bottom: 1px rgba(0, 0, 0, 0.5) dashed;
+}
+
+body > span.subsection {
+	margin-top: -3px;
+}
+
+body > span.subsection > div {
+	margin-top: 4px;
+}
+
 .left {
 	float: left;
 	width: 60%;
@@ -252,12 +269,12 @@ a {
 	color: #000099;
 }
 
-a.detail-link {
+.detail-link {
 	position: absolute;
 	margin-top: -18.5px;
 	right: 120px;
 }
-a.detail-link.narrow {
+.detail-link.narrow {
 	right: 60px;
 }
 
