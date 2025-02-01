@@ -204,6 +204,16 @@ body > span > *:last-child {
 	margin-bottom: 5px;
 }
 
+body > span > div.less-compact {
+	margin-bottom: 3px;
+}
+.less-compact .detail-link {
+	margin-top: -19px;
+}
+.less-compact.semicompact > span {
+	margin-bottom: 7.5px;
+}
+
 .left.semicompact,
 .right.semicompact {
 	margin-bottom: 10px;
