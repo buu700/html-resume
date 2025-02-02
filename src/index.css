@@ -269,7 +269,8 @@ br + strong {
 	display: inline-block;
 }
 
-i {
+i,
+em {
 	font-family: LibertineItalic;
 	font-style: normal;
 }
