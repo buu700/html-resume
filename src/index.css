@@ -95,6 +95,29 @@ body > span.subsection > div {
 	margin-top: 4px;
 }
 
+body > span > div + span div.subitem {
+	width: calc(100% - 13px);
+	margin-top: 2px;
+}
+body > span > div + span div.subitem[detail]:after {
+	margin-left: 0;
+}
+body > span > div + span div.subitem + span {
+	margin-left: 0;
+	padding-left: 20px;
+	padding-top: 4px;
+}
+body > span > div + span div.subitem + span ul {
+	margin-left: -10px;
+}
+body > span > div + span div.subitem + span li {
+	margin-top: 3px;
+	margin-bottom: 0;
+}
+body > span > div + span div.subitem + span:not(:last-of-type) {
+	margin-bottom: 6px;
+}
+
 .left {
 	float: left;
 	width: 60%;
@@ -127,19 +150,30 @@ div[date] + * {
 }
 
 div[detail]:after {
-	font-family: LibertineItalic;
 	font-style: normal;
 	font-weight: normal;
 	margin-left: 15px;
 	content: attr(detail);
 }
+div[detail]:not(.compact-item):after {
+	font-family: LibertineItalic;
+}
+div[detail].compact-item:after {
+	font-family: Libertine;
+}
 
 body > span > div {
 	font-family: LibertineBold;
 	font-weight: bold;
+}
+body > span > div,
+body > span > span:only-child {
 	margin-left: 20px;
 	margin-top: 5px;
 	margin-bottom: 2.5px;
+}
+body > span > div.compact-item {
+	padding-top: 8px;
 }
 body > span > div + span strong {
 	font-family: Libertine;
